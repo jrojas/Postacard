@@ -8,4 +8,4 @@ A web app that interfaces with a third-party API and does something interesting 
 
 Working Hyperlink
 
-http://jrojas.github.io/postacard/index.html
+http://jrojas.github.io/Postacard/index.html

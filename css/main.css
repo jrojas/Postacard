@@ -1,5 +1,83 @@
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 @import url("reset.css");
 
 /* Normal 400 Bold 700*/
 
+body{
+    background:#ecf0f1;
+    font-family: 'Lato', sans-serif;
+
+}
+.container{
+
+    width:960px;
+    margin:0 auto;
+
+}
+
+
+img{
+    width:206px;
+    height:206px; 
+    margin:0 auto;
+  
+
+}
+
+
+h1 {
+font-weight: 700;
+font-size: 45px;
+line-height: 46px;
+color: #ecf0f1;
+margin-left: 240px;
+padding-top: 8px;
+
+}
+
+header{
+height:63px;
+
+
+background:#2c3e50;
+margin-bottom:20px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.photoborder{
+
+margin-bottom: 20px;
+float: left;
+position: relative;
+width: 208px;
+height: 208px;
+border-radius: 5px;
+background: white;
+padding: 5px;
+margin: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+form{
+    width:960px;
+
+}
+
+.search{
+    margin-left: 342px;
+margin-bottom: 13px;
+}
+
+.clear{
+    clear:both;
+}
+
+input{
+    width: 208px;
+    height:30px;
+}
+
+.btnAdd {
+height: 36px;
+}

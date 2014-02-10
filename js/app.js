@@ -26,10 +26,13 @@ var postaCard = (function() {
         
         console.log(photos);
         $.each(photos.data, function(index, photo){
-            photo = "<img src='" +photo.images.low_resolution.url +"'/>";
-            $('.instagramPhotos').append(photo);
+            photo = "<div class='photoborder'>" + "<img src='"
+            +photo.images.low_resolution.url +"'/>" + '</div>' ;
+            $('.container').append(photo);
         
         });
+        var source   = $("#photo-template").html();
+        var template = Handlebars.compile(source);
            
     
     };

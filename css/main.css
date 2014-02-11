@@ -21,8 +21,8 @@ body{
     height:40px; 
     margin:0 auto;
     position: absolute;
-    top: 17px;
-    left: 15px;
+    top: 6px;
+    left: 6px;
    border:3px solid #ECF0F1;
    
 
@@ -90,9 +90,49 @@ margin-bottom: 13px;
 
 input{
     width: 208px;
-    height:30px;
+    height:33px;
 }
 
 .btnAdd {
 height: 36px;
+}
+
+
+#icon-thumb{
+
+position:absolute;
+top: 187px;
+left: 156px;
+width: 33px;
+height: 12px;
+background:#ecf0f1;
+padding: 2px 2px 2px 2px;
+font-size: 12px;
+font-weight: bold;
+border-radius: 2px;
+border: 1px solid #ddd;
+    
+
+
+}
+
+.fa.fa-thumbs-up {
+color: #2c3e50;
+padding:0;
+    
+
+
+}
+
+.fa.fa-search
+{
+height: 33px;
+width: 33px;
+    
+    
+}
+
+.search-sheet{
+    margin-bottom:20px;
+    margin-left: 325px;
 }

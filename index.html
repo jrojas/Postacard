@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>PostaGram</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <link rel="shortcut icon" href="images/favicon.ico"/>
 <script type="text/javascript" src="js/jquery1.10.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
@@ -13,18 +14,27 @@
 </head>
 
 <body>
-    <header>
-<div id ="logo"></div>
+<header>
 <h1>PostaCard</h1>
 </header>
 <div class="container">
+    <form class="search-sheet">
+      
+      
+<input type="text"  class="inputList" placeholder="Search for Photo"><button class="fa fa-search"></button>
 
-    
-<div class="instagramPhotos">
- 
-    	
-
+</form>
+<script id="photo-template" type="text/x-handlebars-template">
+<div class="photoborder">
+   
+    <img class="lowres"  src="{{user}}" />
+    <img class="pic" src="{{lowres}}"/>
+    <div id="icon-thumb"><i class="fa fa-thumbs-up">{{likes}}</i> </div>
+   
 </div>
+
+</script>
+    
 
 </div>
 

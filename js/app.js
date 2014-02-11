@@ -15,16 +15,23 @@ var postaCard = (function() {
        $.getJSON(url, viewData);
         console.log(tag);
         console.log(url);
+   
           
     };
     
     var viewData = function(photos){
+     
+       
         
         $.each(photos.data, function(index, photo)
                 {
                     photo = viewTemplate(photo);
+                 
                    
                 });
+        
+        console.log(photos.data);
+        
     };
     
     var viewTemplate =function(photo){
@@ -41,7 +48,7 @@ var postaCard = (function() {
         var template = Handlebars.compile($($phototemplate).html());
                        $container.append(template(photo));
         
-         console.log(photo);
+         
         
         
     

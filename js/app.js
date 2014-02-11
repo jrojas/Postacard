@@ -3,12 +3,12 @@ var postaCard = (function() {
    
 
     // public variables for PostaCard
-   
+ 
 
-    
     // public init method to be exposed to the document ready function 
     var init = function(){
         
+        searchPhoto();
         
      };
     
@@ -25,20 +25,32 @@ var postaCard = (function() {
     var viewData = function(photos){
         
         console.log(photos);
-        $.each(photos.data, function(index, photo){
-            photo = "<img src='" +photo.images.low_resolution.url +"'/>";
-            $('.instagramPhotos').append(photo);
+        $.each(photos.data, function(index, photo)
+        {
+            photo = "<div class='photoborder'>"
+            +"<img class='lowres'  src='" +photo.user.profile_picture+"' />" 
+            +"<img class='pic' src='" +photo.images.low_resolution.url +"'/>"
+            
+            +"<span class='likes'><strong>"+ photo.likes.count+"</strong></span>" +'</div>';
+            
+            
+         $('.container').append(photo);
+            
+         
         
         });
+        
            
     
     };
+    
     
 
 
     // public API
     return {loadProp: init,
-            search: searchPhoto
+            search : searchPhoto
+           
            };
  
 })();
@@ -47,6 +59,7 @@ var postaCard = (function() {
 $(document).ready(function()
 {
     postaCard.search('santodomingo');
+    
     
  
 });

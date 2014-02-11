@@ -5,6 +5,7 @@ var postaCard = (function() {
     var init = function(){
  
         searchPhotoButton();
+        
 
      };
     
@@ -56,7 +57,9 @@ var postaCard = (function() {
                     {
                     var inputvalue = inputList.val();
                        console.log(inputvalue);
-                        postaCard.search(inputvalue);
+                       
+                        searchPhoto(inputvalue);
+                       
                         console.log(inputvalue);
                        
                        

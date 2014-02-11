@@ -21,11 +21,7 @@ var postaCard = (function() {
         
         $.each(photos.data, function(index, photo)
                 {
-                    
-                        photo = viewTemplate(photo);
-                   
-                    
-
+                    photo = viewTemplate(photo);
                 });
     };
     
@@ -41,7 +37,7 @@ var postaCard = (function() {
                     };
                     
         var template = Handlebars.compile($($phototemplate).html());
-                 $container.append(template(photo));
+                       $container.append(template(photo));
         
         
     

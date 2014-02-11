@@ -30,7 +30,7 @@ var postaCard = (function() {
                    
                 });
         
-        console.log(photos.data);
+        console.log(photos);
         
     };
     
@@ -42,7 +42,8 @@ var postaCard = (function() {
                     
                         user: photo.user.profile_picture,
                         lowres: photo.images.low_resolution.url,
-                        likes: photo.likes.count
+                        likes: photo.likes.count,
+                        
                     };
                     
         var template = Handlebars.compile($($phototemplate).html());

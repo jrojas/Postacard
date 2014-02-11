@@ -25,9 +25,15 @@ var postaCard = (function() {
     var viewData = function(photos){
         
         console.log(photos);
-        $.each(photos.data, function(index, photo){
-            photo = "<div class='photoborder'>" + "<img src='"
-            +photo.images.low_resolution.url +"'/>" + '</div>' ;
+        $.each(photos.data, function(index, photo)
+        {
+            photo = "<div class='photoborder'>"
+            +"<img class='lowres'  src='" +photo.user.profile_picture+"' />" 
+            +"<img class='pic' src='" +photo.images.low_resolution.url +"'/>"
+            
+            +"<span class='likes'><strong>"+ photo.likes.count+"</strong></span>" +'</div>';
+            
+            
          $('.container').append(photo);
             
          

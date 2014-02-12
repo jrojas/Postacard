@@ -26,11 +26,13 @@ var postaCard = (function() {
         $.each(photos.data, function(index, photo)
                 {
                     photo = viewTemplate(photo);
+                    
                  
                    
                 });
         
         console.log(photos);
+        console.log(photos.pagination.next_url);
         
     };
     
@@ -44,10 +46,15 @@ var postaCard = (function() {
                         lowres: photo.images.low_resolution.url,
                         likes: photo.likes.count,
                         
+                        
                     };
                     
         var template = Handlebars.compile($($phototemplate).html());
                        $container.append(template(photo));
+        
+        $('.fa.fa-spinner.fa-spin').fadeOut('slow')
+     
+        
         
          
         
@@ -97,6 +104,7 @@ $(document).ready(function()
 {
     postaCard.search('santodomingo');
     postaCard.loadProp();
+   
   
 });
      

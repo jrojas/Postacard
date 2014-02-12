@@ -53,7 +53,7 @@ var postaCard = (function() {
                        $container.append(template(photo));
         
         $('.fa.fa-spinner.fa-spin').fadeOut('slow')
-        $('.next').toggle();
+     
         
         
          

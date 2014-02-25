@@ -1,11 +1,21 @@
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+=======
+/*@import url(http://fonts.googleapis.com/css?family=Lato:400,700);*/
+@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin,latin-ext);
+>>>>>>> origin/gh-pages
 @import url("reset.css");
 
 /* Normal 400 Bold 700*/
 
 body{
     background:#ecf0f1;
+<<<<<<< HEAD
     font-family: 'Lato', sans-serif;
+=======
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Berkshire Swash', cursive;
+>>>>>>> origin/gh-pages
 
 }
 .container{
@@ -123,10 +133,27 @@ padding:0;
 
 
 }
+<<<<<<< HEAD
 
 .fa.fa-search
 {
 height: 33px;
+=======
+.fa.fa-spinner.fa-spin{
+font-size: 100px;
+position: absolute;
+left: 780px;
+top: 187px;
+z-index: 5000;
+color: #2c3e50;
+
+
+}
+
+.fa.fa-search
+{
+height: 39px;
+>>>>>>> origin/gh-pages
 width: 33px;
     
     
@@ -135,4 +162,28 @@ width: 33px;
 .search-sheet{
     margin-bottom:20px;
     margin-left: 325px;
+<<<<<<< HEAD
 }
+=======
+}
+
+.next{
+width: 960px;
+margin-top: 10px;
+
+    
+
+}
+.tog{
+margin-left: 774px;
+
+background: #ecf0f1;
+padding: 5px 5px 5px 5px;
+font-size: 18px;
+font-weight: bold;
+border-radius: 2px;
+border: 1px solid #ddd;
+color:#2c3e50;
+
+}
+>>>>>>> origin/gh-pages

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var postaCard = (function() {
     // public variables for PostaCard
 
@@ -16,8 +15,7 @@ var postaCard = (function() {
        $.getJSON(url, viewData);
         console.log(tag);
         console.log(url);
-   
-          
+            
     };
     
     var viewData = function(photos){
@@ -82,7 +80,6 @@ var postaCard = (function() {
       
   });
            
-=======
 var postaCard = (function () {
     // public variables for PostaCard
     // public init method to be exposed to the document ready function 
@@ -201,13 +198,12 @@ var postaCard = (function () {
             .fadeOut(effect);
 
     };
->>>>>>> origin/gh-pages
 
     };
     
 
     // public API
-<<<<<<< HEAD
+
     return {loadProp: init,
             search : searchPhoto
            
@@ -222,7 +218,7 @@ $(document).ready(function()
   
 });
      
-=======
+
       
     return {
         loadProp: init,
@@ -236,7 +232,5 @@ $(document)
     .ready(function () {
         postaCard.search('santodomingo');
         postaCard.loadProp();
-
->>>>>>> origin/gh-pages
 
     });   

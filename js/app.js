@@ -11,9 +11,24 @@ var postaCard = (function () {
     var searchPhoto = function (tag) {
         var $photoBorder = $('.photoborder');
         $photoBorder.detach();
-        var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=d57bbd445f2e4d4685f8f3710ef9a394"
+       
+        
+        if(tag == false){
+			var url = $('.tog').attr('data-page');
+		}else{
+	        var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=d57bbd445f2e4d4685f8f3710ef9a394";
+		}
 
-        $.getJSON(url, viewData);
+        //remove for paging to work $.getJSON(url, viewData);
+        $.ajax({
+			url: url,
+			dataType: 'jsonp',
+			success: viewData,
+			error: function(data){
+				console.log(data);
+			}
+		});
+
 
         console.log(tag);
         console.log(url);
@@ -27,6 +42,7 @@ var postaCard = (function () {
         });
         console.log(photos);
         console.log(photos.pagination.next_url);
+        $('.tog').attr('data-page',photos.pagination.next_url);
     };
 
     var viewTemplate = function (photo) {
@@ -101,6 +117,8 @@ $(document)
         postaCard.search('santodomingo');
         postaCard.loadProp();
         
-
+$('.tog').on('click',function(){
+			postaCard.search(false);
+		});
 
     });   

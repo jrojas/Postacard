@@ -128,7 +128,7 @@ padding:0;
 .fa.fa-spinner.fa-spin{
 font-size: 100px;
 position: absolute;
-left: 580px;
+left: 780px;
 top: 187px;
 z-index: 5000;
 color: #2c3e50;
@@ -161,7 +161,7 @@ margin-left: 774px;
 
 background: #ecf0f1;
 padding: 5px 5px 5px 5px;
-font-size: 12px;
+font-size: 18px;
 font-weight: bold;
 border-radius: 2px;
 border: 1px solid #ddd;

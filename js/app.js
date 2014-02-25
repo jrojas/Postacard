@@ -21,7 +21,7 @@ var postaCard = (function () {
 	        var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=d57bbd445f2e4d4685f8f3710ef9a394";
 		}
 
-        //remove for paging to work $.getJSON(url, viewData);
+        
         $.ajax({
 			url: url,
 			dataType: 'jsonp',
@@ -64,7 +64,6 @@ var postaCard = (function () {
 
 
         fadeOut('.fa.fa-spinner.fa-spin', 'slow');
-
 
     };
     var searchPhotoButton = function () {
